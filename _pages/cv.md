@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "CV"
+title: ""
 permalink: /cv/
 author_profile: true
 redirect_from:
@@ -8,6 +8,10 @@ redirect_from:
 ---
 
 {% include base_path %}
+Contact
+======
+* Email: yongzhang [at] qq.com
+* Personal website: https://zyong812.github.io
 
 Education
 ======
@@ -17,11 +21,6 @@ Education
 Work experience
 ======
 * DJI, 软件工程师, 2015 - 2018
-
-Contact
-======
-* Email: yongzhang [at] qq.com
-* Personal website: https://zyong812.github.io
 
 Publications
 ======
