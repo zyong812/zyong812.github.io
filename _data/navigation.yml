@@ -3,11 +3,11 @@ main:
   - title: "Blog posts"
     url: /blogs
 
+  - title: "Talks"
+    url: /talks/
+
   - title: "CV"
     url: /cv/
-
-  # - title: "Talks"
-  #   url: /talks/
 
   # - title: "Publications"
   #   url: /publications/
