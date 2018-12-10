@@ -37,7 +37,7 @@ From the above figure, we may conclude that
 Furthermore, I categorized above multimodal applications in the table into following 3 classes.
 
 * **Retrival**: We want to retrieve data by using data from another modal. An important work for this task is how to define the similarity between cross-modal data. Example applications from the above table are image retrival by text or audio.
-* **Transalation**: We want to tranlate data from one modal to another modal with the similar semantic meaning. Example-based and generative deep learning methods are applied for this task. Example applications from above table are image captioning, audio to text translation, text to audio sythesis.
+* **Translation**: We want to tranlate data from one modal to another modal with the similar semantic meaning. Example-based and generative deep learning methods are applied for this task. Example applications from above table are image captioning, audio to text translation, text to audio sythesis.
 * **Co-learning**: We want to make more robust and accurate predictions by using data from different modals. Example application is audio-video speech recognition. Here I have a question. If we always have sufficient unimodal data, usually we can train good enough prediction model, co-learning may not be so meanningful in this case. Therefore, can we say co-learning is meaningful only when we don't have sufficient unimodal data?
 
 

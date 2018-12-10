@@ -39,11 +39,11 @@ List 是 Python 重要的数据结构，重点总结以下用法
 
 包：一系列代码的目录，包含functions, types, methods, constants
 
-包导入方法
+包导入方法:
 
-    * import numpy 基本
-    * import numpy as np 重命名导入
-    * from numpy import array 只导入一部分
+* import numpy 基本
+* import numpy as np 重命名导入
+* from numpy import array 只导入一部分
 
 包管理工具： pip etc.
 
@@ -56,9 +56,10 @@ List 是 Python 重要的数据结构，重点总结以下用法
 很多 python 开源项目不指明 python 版本，也不写明依赖的第三方包列表，总是运行了代码才知道 python 代码合不合适，一个个安装缺失的包。
 对于 ruby 项目，一般都会有一个 Gemfile 说明该项目使用的 ruby 版本及依赖了哪些第三方包，并且会使用 Gemfile.lock 锁定包的版本，以防第三方包更新导致的不兼容。
 
-## 3. 调试
+## 4. 调试
 
 可以使用集成环境，但是作为一个极简主义的程序员，还是喜欢使用自带的命令行调试工具 pdb。
+
 ```
 python -m pdb test.py
 ```
@@ -70,15 +71,17 @@ python -m pdb test.py
 * s 跳入
 * n 下一步
 
-## 4. 重要数据分析工具
+## 5. 重要数据分析工具
 
 ### Numpy
 
 相比于List的优点：
+
 * 方便的数学计算操作
 * 速度、性能有保证
 
 注意：
+
 * 元素只能是一种类型
 * 会改变一些方法
 
