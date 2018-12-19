@@ -1,6 +1,4 @@
-This paper summarizes the properties of commonly-used types of matrices.
-
-
+This post summarizes the properties of commonly-used types of matrices.
 
 - [General matrix ($A \in \Re^{m \times n}$)](#general-matrix-a-in-rem-times-n)
 - [Square matrix ($A \in \Re^{n \times n}$)](#square-matrix-a-in-ren-times-n)
