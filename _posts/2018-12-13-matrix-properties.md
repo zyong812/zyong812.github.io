@@ -1,5 +1,13 @@
-# Matrix properties
+This paper summarizes the properties of commonly-used types of matrices.
 
+
+
+- [General matrix ($A \in \Re^{m \times n}$)](#general-matrix-a-in-rem-times-n)
+- [Square matrix ($A \in \Re^{n \times n}$)](#square-matrix-a-in-ren-times-n)
+- [Symetric matrix / Hermitian matrix](#symetric-matrix--hermitian-matrix)
+- [Positive semi-definite matrix (PSD)](#positive-semi-definite-matrix-psd)
+- [Non-negative square matrix](#non-negative-square-matrix)
+- [Other points](#other-points)
 
 ## General matrix ($A \in \Re^{m \times n}$)
 
@@ -12,7 +20,8 @@
 
 **P1:** SVD
 
-$$A = U \Sigma V^H = \sum_{i} \sigma_{i}^{r} u v^H = U_1 \tilde{\Sigma} V_1^H$$
+$$ A = U \Sigma V^H = \sum_{i} \sigma_{i}^{r} u v^H = U_1 \tilde{\Sigma} V_1^H $$
+
 where $U,V$ are unitary, and $\Sigma$ is triangular.
 
 - $Range(A) = Range(U_1), Null(A) = Null(U_2)$
@@ -28,7 +37,7 @@ where $U,V$ are unitary, and $\Sigma$ is triangular.
 - $Range(A) = \Re^m$
 - $Range(B) = Range(BA)$
 
-### Square matrix ($A \in \Re^{n \times n}$)
+## Square matrix ($A \in \Re^{n \times n}$)
 
 **P0:** Basics
 
@@ -42,7 +51,7 @@ where $U$ is unitary matrix, and $T$ is upper triangular matrix.
 
 **P2:** LU decompostion and its variations (+condtion: Every principal submatrix $A_{\{1,2,...n-1\}}$ nonsingular. If $A$ is nonsingular, ($L,U$) is unique.)
 
-$$A = LU = L D M^T$$
+$$ A = LU = L D M^T $$
 $L, M$ are lower triangular with unit diagnols, and $U$ is upper triangular, which is obtained by Gaussian-elimination.
 
 **P3:** Eigenvalue and eigenvector
@@ -53,26 +62,31 @@ Eigenvalue decompostion (EVD) exists if $V$ is invertible.
 
 **P4:** Matrix norm
 
-- $|||A||| \geq \rho(A)$ for any matrix norm.
+- $|||A||| \geq \rho(A)$
+ for any matrix norm.
 - $\forall \epsilon > 0, \exists |||\cdot|||$ such that $\rho(A) \leq |||A||| \leq \rho(A) + \epsilon.$
-- Cauthy inequality: $|||AB||| \leq |||A||| \cdot |||B|||$
+- Cauthy inequality: 
+$|||AB||| \leq |||A||| \cdot |||B|||$
 - Examples: 
   - Operator norm (vector-induced norm)
-    - $|||A|||_1 = \max_{||x||_1 = 1} ||Ax||_1$ -- max column sum norm
-    - $|||A|||_{\infty} = \max_{||x||_{\infty} = 1} ||Ax||_{\infty}$ -- max row sum norm
+    - $|||A|||_1 = \max_{||x||_1 = 1} ||Ax||_1$ 
+    -- max column sum norm
+    - $|||A|||_{\infty} = \max_{||x||_{\infty} = 1} ||Ax||_{\infty}$
+     -- max row sum norm
     - $|||A|||_2 = \max_{||x||_2 = 1} ||Ax||_2 = \sigma_{max}(A)$
   - Schatten norm
     - $\sum_{i}^{p} \sigma_i(A)$ -- nuclear norm
-    - $\sqrt{\sum_{i}^{p} \sigma_i(A)^2} = tr(A^H A) = \sqrt{\sum_i \sum_j a_{ij}^2}$ -- Frobenius norm
+    - $\sqrt{\sum_{i}^{p} \sigma_i(A)^2} = tr(A^H A) = \sqrt{\sum_i \sum_j a_{ij}^2}$
+     -- Frobenius norm
     - $\sigma_{max}(A) = |||A|||_2$
 
 
 **P5:** Spectral radius
 
 - $\rho(A) = max\{|\lambda_i|\} = \inf_{|||\cdot|||} |||A||| = \lim_{k->\infty} (|||A^k|||)^{1/k}$
-- $\lim_{k->\infty} A^k = 0$ iff $\rho(A) < 1$.
+- $\lim_{k->\infty} A^k = 0 \iff \rho(A) < 1$.
 
-#### Symetric matrix / Hermitian matrix
+## Symetric matrix / Hermitian matrix
 
 **P0:** Basics
 - All the eigenvalues are real
@@ -83,7 +97,7 @@ Eigenvalue decompostion (EVD) exists if $V$ is invertible.
 $$A = U \Lambda U^H$$
 where $U$ is unitary, $D$ is diagonal with eigenvalues
 
-##### Positive semi-definite matrix (PSD)
+## Positive semi-definite matrix (PSD)
 
 **P1:** Square-root decomposition
 
@@ -93,7 +107,7 @@ $$ A = U \Lambda^{1/2} \Lambda^{1/2} U^H = B B^H, where \: B = U \Lambda^{1/2}.$
 
 - $rank(A A^T) = rank(A) = rank(A^T) = rank(A^T A)$
 
-#### Non-negative square matrix
+## Non-negative square matrix
 
 **P1:** For $A \geq 0$
 
@@ -103,10 +117,14 @@ $$ A = U \Lambda^{1/2} \Lambda^{1/2} U^H = B B^H, where \: B = U \Lambda^{1/2}.$
 
 **P2:** For $A \gt 0$ (useful for PageRank)
 
-- $\rho(A) = max\{|\lambda|\}$ is an eigenvalue of $A$.
-- The corresponding eigenvetor $v_{\rho}$ to $\rho(A)$ could be $v_{\rho} > 0$.
-- $|\lambda| < \rho$ for $\lambda \neq \rho$.
-- $dim(Null(A - \rho(A) I)) = 1$. (Geometric and algebra multiplicity of $\rho$ is 1.)
+- $\rho(A) = max\{|\lambda|\}$
+ is an eigenvalue of $A$.
+- The corresponding eigenvetor 
+$v_{\rho}$ to $\rho(A)$ could be $v_{\rho} > 0$.
+- $|\lambda| < \rho$ 
+for $\lambda \neq \rho$.
+- $dim(Null(A - \rho(A) I)) = 1$
+(Geometric and algebra multiplicity of $\rho$ is 1.)
 
 
 
