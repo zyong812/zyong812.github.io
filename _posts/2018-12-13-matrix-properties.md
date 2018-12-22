@@ -1,5 +1,15 @@
+---
+title: 'Matrix properties'
+date: 2018-11-23
+permalink: /posts/2018/11/python_essentials
+published: false
+tags:
+  - python
+---
+
 This post summarizes the properties of commonly-used types of matrices.
 
+- [- python](#python)
 - [General matrix ($A \in \Re^{m \times n}$)](#general-matrix-a-in-rem-times-n)
 - [Square matrix ($A \in \Re^{n \times n}$)](#square-matrix-a-in-ren-times-n)
 - [Symetric matrix / Hermitian matrix](#symetric-matrix--hermitian-matrix)
@@ -18,7 +28,9 @@ This post summarizes the properties of commonly-used types of matrices.
 
 **P1:** SVD
 
-$$ A = U \Sigma V^H = \sum_{i} \sigma_{i}^{r} u v^H = U_1 \tilde{\Sigma} V_1^H $$
+$$
+A = U \Sigma V^H = \sum_{i} \sigma_{i}^{r} u v^H = U_1 \tilde{\Sigma} V_1^H
+$$
 
 where $U,V$ are unitary, and $\Sigma$ is triangular.
 
@@ -44,38 +56,40 @@ where $U,V$ are unitary, and $\Sigma$ is triangular.
 
 **P1:** Schur Triangularization (always exists)
 
-$$A = U T U^H$$
+$$
+  A = U T U^H
+$$
 where $U$ is unitary matrix, and $T$ is upper triangular matrix.
 
 **P2:** LU decompostion and its variations (+condtion: Every principal submatrix $A_{\{1,2,...n-1\}}$ nonsingular. If $A$ is nonsingular, ($L,U$) is unique.)
 
-$$ A = LU = L D M^T $$
+$$
+  A = LU = L D M^T
+$$
 $L, M$ are lower triangular with unit diagnols, and $U$ is upper triangular, which is obtained by Gaussian-elimination.
 
 **P3:** Eigenvalue and eigenvector
 
-$$A V = V D$$
+$$
+  A V = V D
+$$
 Eigenvalue decompostion (EVD) exists if $V$ is invertible.
 - $\{\lambda(A)\} = \{\lambda(A^T)\}$ since $det(A - \lambda I) = det(A^T - \lambda I)$
 
 **P4:** Matrix norm
 
-- $|||A||| \geq \rho(A)$
- for any matrix norm.
+- $|||A||| \geq \rho(A)$ for any matrix norm.
 - $\forall \epsilon > 0, \exists |||\cdot|||$ such that $\rho(A) \leq |||A||| \leq \rho(A) + \epsilon.$
-- Cauthy inequality: 
-$|||AB||| \leq |||A||| \cdot |||B|||$
-- Examples: 
+- Cauthy inequality: $|||AB||| \leq |||A||| \cdot |||B|||\$
+
+Examples: 
   - Operator norm (vector-induced norm)
-    - $|||A|||_1 = \max_{||x||_1 = 1} ||Ax||_1$ 
-    -- max column sum norm
-    - $|||A|||_{\infty} = \max_{||x||_{\infty} = 1} ||Ax||_{\infty}$
-     -- max row sum norm
+    - $|||A|||_1 = \max_{||x||_1 = 1} ||Ax||_1$ -- max column sum norm
+    - $|||A|||_{\infty} = \max_{||x||_{\infty} = 1} ||Ax||_{\infty}$ -- max row sum norm
     - $|||A|||_2 = \max_{||x||_2 = 1} ||Ax||_2 = \sigma_{max}(A)$
   - Schatten norm
     - $\sum_{i}^{p} \sigma_i(A)$ -- nuclear norm
-    - $\sqrt{\sum_{i}^{p} \sigma_i(A)^2} = tr(A^H A) = \sqrt{\sum_i \sum_j a_{ij}^2}$
-     -- Frobenius norm
+    - $\sqrt{\sum_{i}^{p} \sigma_i(A)^2} = tr(A^H A) = \sqrt{\sum_i \sum_j a_{ij}^2}$ -- Frobenius norm
     - $\sigma_{max}(A) = |||A|||_2$
 
 
@@ -87,19 +101,24 @@ $|||AB||| \leq |||A||| \cdot |||B|||$
 ## Symetric matrix / Hermitian matrix
 
 **P0:** Basics
+
 - All the eigenvalues are real
 - Eigenvectors associated with different eigenvalues are orthogonal.
 
 **P1:** EVD always exists
 
-$$A = U \Lambda U^H$$
+$$
+A = U \Lambda U^H
+$$
 where $U$ is unitary, $D$ is diagonal with eigenvalues
 
 ## Positive semi-definite matrix (PSD)
 
 **P1:** Square-root decomposition
 
-$$ A = U \Lambda^{1/2} \Lambda^{1/2} U^H = B B^H, where \: B = U \Lambda^{1/2}.$$
+$$
+A = U \Lambda^{1/2} \Lambda^{1/2} U^H = B B^H, where \: B = U \Lambda^{1/2}.
+$$
 
 **P2:** For $G=A A^T$
 
@@ -117,13 +136,9 @@ $$ A = U \Lambda^{1/2} \Lambda^{1/2} U^H = B B^H, where \: B = U \Lambda^{1/2}.$
 
 - $\rho(A) = max\{|\lambda|\}$
  is an eigenvalue of $A$.
-- The corresponding eigenvetor 
-$v_{\rho}$ to $\rho(A)$ could be $v_{\rho} > 0$.
-- $|\lambda| < \rho$ 
-for $\lambda \neq \rho$.
-- $dim(Null(A - \rho(A) I)) = 1$
-(Geometric and algebra multiplicity of $\rho$ is 1.)
-
+- The corresponding eigenvetor $v_{\rho}$ to $\rho(A)$ could be $v_{\rho} > 0$.
+- $|\lambda| < \rho$ for $\lambda \neq \rho$.
+- $dim(Null(A - \rho(A) I)) = 1$ (Geometric and algebra multiplicity of $\rho$ is 1.)
 
 
 ## Other points
