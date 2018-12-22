@@ -1,17 +1,16 @@
 ---
 title: On Spectral Clustering
+published: false
 ---
 
 
-Clustering problems a very common and classical problem in many fields.
-This post will introuduce a set of amazingly good algorithms to solve clustering problem.
-
+- [published: false](#published-false)
 - [1. Introduction](#1-introduction)
 - [2. Problem statement](#2-problem-statement)
 - [3. Methods](#3-methods)
 - [4. Simulation Results and Discussion](#4-simulation-results-and-discussion)
   - [Compare with Matlab *kmeans* function](#compare-with-matlab-kmeans-function)
-  - [Constructing similarity graph}](#constructing-similarity-graph)
+  - [Constructing similarity graph](#constructing-similarity-graph)
   - [Choosing numbers of clusters $k$ automatically](#choosing-numbers-of-clusters-k-automatically)
 - [5. Potential applications](#5-potential-applications)
 - [References](#references)
@@ -181,7 +180,7 @@ The results are obvious.
 Spectral clustering algorithm has much better for complex data points.
 I have also tested dataset that $kmeans$ can handle, and the result shows that the clustering result of spectral clustering algorithm have more stable solution.
 
-### Constructing similarity graph}
+### Constructing similarity graph
 There are many choices for constructing the similarity matrix as described in Section 2.
 In my implementation, I've chosen Gaussian function
 
