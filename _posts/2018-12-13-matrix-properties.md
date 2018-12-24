@@ -1,21 +1,23 @@
 ---
 title: 'Matrix properties'
 date: 2018-11-23
-permalink: /posts/2018/11/python_essentials
 published: false
 tags:
-  - python
+  - math
 ---
 
 This post summarizes the properties of commonly-used types of matrices.
 
-- [- python](#python)
+- [- math](#math)
 - [General matrix ($A \in \Re^{m \times n}$)](#general-matrix-a-in-rem-times-n)
 - [Square matrix ($A \in \Re^{n \times n}$)](#square-matrix-a-in-ren-times-n)
-- [Symetric matrix / Hermitian matrix](#symetric-matrix--hermitian-matrix)
+- [Symmetric matrix / Hermitian matrix](#symmetric-matrix--hermitian-matrix)
 - [Positive semi-definite matrix (PSD)](#positive-semi-definite-matrix-psd)
 - [Non-negative square matrix](#non-negative-square-matrix)
 - [Other points](#other-points)
+
+
+![1](/assets/images/matrix_prop.png)
 
 ## General matrix ($A \in \Re^{m \times n}$)
 
@@ -98,7 +100,7 @@ Examples:
 - $\rho(A) = max\{|\lambda_i|\} = \inf_{|||\cdot|||} |||A||| = \lim_{k->\infty} (|||A^k|||)^{1/k}$
 - $\lim_{k->\infty} A^k = 0 \iff \rho(A) < 1$.
 
-## Symetric matrix / Hermitian matrix
+## Symmetric matrix / Hermitian matrix
 
 **P0:** Basics
 
