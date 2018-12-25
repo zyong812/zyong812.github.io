@@ -91,7 +91,7 @@ By the definition of $L$ and equation (1), we can conclude some important proper
 Property 3 is an amazingly important property, which implies that by analyzing the eigenvalue and eigenspace of $L$, we can find the partition of $L$, which is also the partition for $W$ and the original graph.
 
 Some researcher made normalization for $L$ to achieve better performance.
-Shi et.al [3] defined the normalized $L$ as $L_{rw} = D^{-1} L = I - D^{-1}W$, and Ng et.al normalized $L$ as [1] $L_{sym} = D^{-\frac{1}{2}} L D^{-\frac{1}{2}} = I - D^{-\frac{1}{2}} W D^{-\frac{1}{2}}$.
+Shi et al. [3] defined the normalized $L$ as $L_{rw} = D^{-1} L = I - D^{-1}W$, and Ng et al. normalized $L$ as [1] $L_{sym} = D^{-\frac{1}{2}} L D^{-\frac{1}{2}} = I - D^{-\frac{1}{2}} W D^{-\frac{1}{2}}$.
 Properties of $L_rw$ and $L_sym$ can be easily derived by the properties of $L$, and some of them are closely related.
 Based on different graph Laplacian, new algorithms are developed.
 In my experiment, I choose the algorithm based on $L_rw$ as suggested by [2].
