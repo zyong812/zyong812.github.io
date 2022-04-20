@@ -65,7 +65,7 @@ google_ad_slot           :
 # Site Author
 author:
   name             : "Yong Zhang"
-  avatar           :
+  avatar           : 'profile.jpeg'
   bio              : "CUHK-SZ & JD Joint-PhD candidate"
   location         : "Shenzhen & Beijing, China"
   email            : "yongzhang@link.cuhk.edu.cn"
