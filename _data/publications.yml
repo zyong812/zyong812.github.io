@@ -1,17 +1,16 @@
 # Publications on home page
 all:
-  - title: "Exploring Structure-aware Transformer over Interaction Proposals for Human-Object Interaction Detection"
-    authors: "**Yong Zhang**, Yingwei Pan, Ting Yao, Rui Huang, Tao Mei, and Chang-Wen Chen"
-    venue: "In CVPR, 2022"
-    teaser: STIP_intro.pdf
-    links:
-      - "[PDF](){: .btn .btn--info}"
-      - "[Code](https://github.com/zyong812/STIP){: .btn .btn--info}"
+  # - title: "Exploring Structure-aware Transformer over Interaction Proposals for Human-Object Interaction Detection"
+  #   authors: "**Yong Zhang**, Yingwei Pan, Ting Yao, Rui Huang, Tao Mei, and Chang-Wen Chen"
+  #   venue: "In CVPR, 2022"
+  #   teaser: STIP_intro.pdf
+  #   links:
+  #     - "[PDF](){: .btn .btn--info}"
 
   - title: "Boosting Scene Graph Generation with Visual Relation Saliency." ACM Transactions on Multimedia Computing"
     authors: "**Yong Zhang**, Yingwei Pan, Ting Yao, Rui Huang, Tao Mei, and Chang-Wen Chen"
     venue: "In ACM Transactions on Multimedia Computing, Communications, and Applications, 2022"
-    teaser: SMP_intro.pdf
+    # teaser: SMP_intro.pdf
 
   - title: "Touch-interaction behavior for continuous user authentication on smartphones"
     authors: "Chao Shen, **Yong Zhang**, Zhongmin Cai, Tianwen Yu, and Xiaohong Guan."
