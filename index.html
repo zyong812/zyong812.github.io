@@ -8,7 +8,7 @@ author_profile: true
 
 <h2 id="bio">Bio</h2>
 <div><p>
-I am currently a Ph.D student of <a href="https://sse.cuhk.edu.cn" target="_blank">School of Science and Engineering</a> in <a href="https://www.cuhk.edu.cn" target="_blank">The Chinese University of Hong Kong, Shenzhen (CUHK-SZ)</a>, a member of a joint Ph.D program of CUHK-SZ and JD Explore Academy. My advisors are <a href="http://tingyao.deepfun.club/" target="_blank">Dr. Ting Yao</a>, <a href="https://sse.cuhk.edu.cn/en/faculty/huangrui" target="_blank">Prof. Rui Huang</a>, <a href="https://taomei.me/" target="_blank">Dr. Tao Mei</a> and <a href="https://www.polyu.edu.hk/en/comp/people/academic-staff/prof-chen-changwen" target="_blank">Prof. Changwen Chen</a>.
+I am currently a Ph.D student of <a href="https://sse.cuhk.edu.cn" target="_blank">School of Science and Engineering</a> in <a href="https://www.cuhk.edu.cn" target="_blank">The Chinese University of Hong Kong, Shenzhen (CUHK-SZ)</a>, a member of a joint Ph.D program of CUHK-SZ and JD Explore Academy. My supervisors are <a href="https://sse.cuhk.edu.cn/en/faculty/huangrui" target="_blank">Prof. Rui Huang</a>, <a href="https://taomei.me/" target="_blank">Dr. Tao Mei</a> and <a href="https://www.polyu.edu.hk/en/comp/people/academic-staff/prof-chen-changwen" target="_blank">Prof. Changwen Chen</a>.
 </p></div>
 
 <!-- {% include timeline.html %} -->
@@ -27,24 +27,24 @@ I am currently a Ph.D student of <a href="https://sse.cuhk.edu.cn" target="_blan
     <li>Ph.D in Computer and Information Engineering (Expected June 2023)</li>
     <li>Joint Ph.D program with JD</li>
   </ul>
-  <li><b>2011.8 - 2015.6, Xi'an Jiaotong Uninversity (XJTU) (GPA top 5%)</b></li>
+  <li><b>2011.8 - 2015.6, Xi'an Jiaotong Uninversity (XJTU)</b></li>
   <ul>
-    <li>B.Eng. in Automation</li>
+    <li>B.Eng. in Automation (GPA top 5%)</li>
   </ul>
 </ul>
 
 <h2 style="clear: both;">Experiences</h2>
 <ul>
-  <li><b>2020.8 - Present</b>: Research Intern</li>
+  <li><b>2020.8 - Present, Research Intern</b></li>
   <ul>
     <li>Computer Vision and Multimedia Lab at JD Explore Academy, Beijing</li>
-    <li>Mentor: <a href="http://tingyao.deepfun.club/" target="_blank">Dr. Ting Yao</a></li>
+    <li>Mentor: <a href="http://home.ustc.edu.cn/~panywei/" target="_blank">Dr. Yinwei Pan</a> and <a href="http://tingyao.deepfun.club/" target="_blank">Dr. Ting Yao</a></li>
   </ul>
-  <li><b>2015.7 - 2018.7</b>: Software Engineer</li>
+  <li><b>2015.7 - 2018.7, Software Engineer</b></li>
   <ul>
     <li>DJI (大疆), Shenzhen</li>
   </ul>
-  <li><b>2013.8 - 2015.5</b>: Research Assistant</li>
+  <li><b>2013.8 - 2015.5, Research Assistant</b></li>
   <ul>
     <li>Systems Engineering Institue of XJTU, Xi'an</li>
     <li>Mentor:<a href="https://gr.xjtu.edu.cn/en/web/cshen" target="_blank"> Prof. Chao Shen</a>　</li>
@@ -53,13 +53,16 @@ I am currently a Ph.D student of <a href="https://sse.cuhk.edu.cn" target="_blan
 
 
 <h2 style="clear: both;" id="publications">Publications <a href="https://scholar.google.com/citations?user=raEl9wUAAAAJ" style="font-size: 0.85em; font-weight: normal;">[Google Scholar]</a></h2>
-<ul>
+<!-- <ul>
   <li>Zhang, Yong, Yingwei Pan, Ting Yao, Rui Huang, Tao Mei, and Chang-Wen Chen. "Exploring Structure-aware Transformer over Interaction Proposals for Human-Object Interaction Detection." In Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition, 2022. (Accepted)</li>
   <li>Zhang, Yong, Yingwei Pan, Ting Yao, Rui Huang, Tao Mei, and Chang-Wen Chen. "Boosting Scene Graph Generation with Visual Relation Saliency." ACM Transactions on Multimedia Computing, Communications, and Applications (TOMM) (2022).</li>
   <li>Shen, Chao, Yong Zhang, Xiaohong Guan, and Roy A. Maxion. "Performance analysis of touch-interaction behavior for active smartphone authentication." IEEE Transactions on Information Forensics and Security 11, no. 3 (2015): 498-513.</li>
   <li>Shen, Chao, Yong Zhang, Zhongmin Cai, Tianwen Yu, and Xiaohong Guan. "Touch-interaction behavior for continuous user authentication on smartphones." In 2015 International Conference on Biometrics (ICB), pp. 157-162. IEEE, 2015.</li>
-</ul>
-
+</ul> -->
+{% for publication in site.data.publications %}
+  {% include publication-single.html %}
+{% endfor %}
+<div style="clear: both;"></div>
 
 <!-- <h2>News</h2>
 <div id="news">

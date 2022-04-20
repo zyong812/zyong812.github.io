@@ -1,16 +1,21 @@
 # Publications on home page
-year2021:
-  - title: "CoCo-BERT: Improving Video-Language Pre-training with Contrastive Cross-modal Matching and Denoising"
-    authors: "**Yong Zhang**, Yehao Li, Yingwei Pan, Ting Yao, Hongyang Chao, Tao Mei"
-    venue: "In *ACM Multimedia*, 2021."
-    teaser: coco_bert.png
-    links:
-      - "[PDF](https://arxiv.org/pdf/2112.07515.pdf){: .btn .btn--info}"
+- title: "Exploring Structure-aware Transformer over Interaction Proposals for Human-Object Interaction Detection"
+  authors: "**Yong Zhang**, Yingwei Pan, Ting Yao, Rui Huang, Tao Mei, and Chang-Wen Chen"
+  venue: "In CVPR, 2022"
+  teaser: coco_bert.png
+  links:
+    - "[PDF](){: .btn .btn--info}"
+    - "[Code](https://github.com/zyong812/STIP){: .btn .btn--info}"
 
-year2020:
-  - title: "Auto-captions on GIF: A Large-scale Video-sentence Dataset for Vision-language Pre-training"
-    authors: "Yingwei Pan, Yehao Li, **Yong Zhang**, Jun Xu, Ting Yao, Tao Mei"
-    venue: "In *Arxiv*, 2020."
-    teaser: auto_captions_on_gif_dataset.png
-    links:
-      - "[PDF](https://arxiv.org/pdf/2007.02375){: .btn .btn--info}"
+- title: "Boosting Scene Graph Generation with Visual Relation Saliency." ACM Transactions on Multimedia Computing"
+  authors: "**Yong Zhang**, Yingwei Pan, Ting Yao, Rui Huang, Tao Mei, and Chang-Wen Chen"
+  venue: "In ACM Transactions on Multimedia Computing, Communications, and Applications, 2022"
+  teaser: auto_captions_on_gif_dataset.png
+
+- title: "Touch-interaction behavior for continuous user authentication on smartphones"
+  authors: "Chao Shen, **Yong Zhang**, Zhongmin Cai, Tianwen Yu, and Xiaohong Guan."
+  venue: "In International Conference on Biometrics (ICB), and Applications, 2015"
+
+- title: "Performance analysis of touch-interaction behavior for active smartphone authentication"
+  authors: "Shen, Chao, **Yong Zhang**, Xiaohong Guan, and Roy A. Maxion"
+  venue: "In IEEE Transactions on Information Forensics and Security, 2015"

@@ -1,13 +1,17 @@
 # main links links
 main:
-  - title: "Blog"
-    url: /blog/
-
-  - title: "Publications"
-    url: /#publications
+  # - title: "Blog"
+  #   url: /blog/
 
   - title: "Bio"
     url: /#bio
+
+  - title: "Publications"
+    url: /#publications
+  
     
+  # - title: "Blog"
+  #   url: /blog/
+
   # - title: "CV"
   #   url: /images/PeterAndersonCV.pdf
