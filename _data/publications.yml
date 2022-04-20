@@ -1,21 +1,21 @@
 # Publications on home page
 all:
-  # - title: "Exploring Structure-aware Transformer over Interaction Proposals for Human-Object Interaction Detection"
-  #   authors: "**Yong Zhang**, Yingwei Pan, Ting Yao, Rui Huang, Tao Mei, and Chang-Wen Chen"
+  - title: "Exploring Structure-aware Transformer over Interaction Proposals for Human-Object Interaction Detection"
+    authors: "**Yong Zhang**, Yingwei Pan, Ting Yao, Rui Huang, Tao Mei, and Chang-Wen Chen"
   #   venue: "In CVPR, 2022"
   #   teaser: STIP_intro.pdf
   #   links:
   #     - "[PDF](){: .btn .btn--info}"
 
-  - title: "Boosting Scene Graph Generation with Visual Relation Saliency." ACM Transactions on Multimedia Computing"
-    authors: "**Yong Zhang**, Yingwei Pan, Ting Yao, Rui Huang, Tao Mei, and Chang-Wen Chen"
-    venue: "In ACM Transactions on Multimedia Computing, Communications, and Applications, 2022"
-    # teaser: SMP_intro.pdf
+  # - title: "Boosting Scene Graph Generation with Visual Relation Saliency." ACM Transactions on Multimedia Computing"
+  #   authors: "**Yong Zhang**, Yingwei Pan, Ting Yao, Rui Huang, Tao Mei, and Chang-Wen Chen"
+  #   venue: "In ACM Transactions on Multimedia Computing, Communications, and Applications, 2022"
+  #   # teaser: SMP_intro.pdf
 
-  - title: "Touch-interaction behavior for continuous user authentication on smartphones"
-    authors: "Chao Shen, **Yong Zhang**, Zhongmin Cai, Tianwen Yu, and Xiaohong Guan."
-    venue: "In International Conference on Biometrics (ICB), and Applications, 2015"
+  # - title: "Touch-interaction behavior for continuous user authentication on smartphones"
+  #   authors: "Chao Shen, **Yong Zhang**, Zhongmin Cai, Tianwen Yu, and Xiaohong Guan."
+  #   venue: "In International Conference on Biometrics (ICB), and Applications, 2015"
 
-  - title: "Performance analysis of touch-interaction behavior for active smartphone authentication"
-    authors: "Shen, Chao, **Yong Zhang**, Xiaohong Guan, and Roy A. Maxion"
-    venue: "In IEEE Transactions on Information Forensics and Security, 2015"
+  # - title: "Performance analysis of touch-interaction behavior for active smartphone authentication"
+  #   authors: "Shen, Chao, **Yong Zhang**, Xiaohong Guan, and Roy A. Maxion"
+  #   venue: "In IEEE Transactions on Information Forensics and Security, 2015"
