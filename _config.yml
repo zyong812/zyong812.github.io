@@ -7,11 +7,11 @@
 
 # Site Settings
 locale                   : "en"
-title                    : "Jianjie Luo"
+title                    : "Yong Zhang"
 title_separator          : "-"
-name                     : "Jianjie Luo"
-description              : "Jianjie Luo's personal academic website."
-url                      : https://jianjieluo.github.io
+name                     : "Yong Zhang"
+description              : "Yong Zhang's academic website."
+url                      : https://zyong812.github.io
 baseurl                  : # the subpath of your site, e.g. "/blog"
 gh_repo                  :
 teaser                   : # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
@@ -20,7 +20,7 @@ words_per_minute         : 200
 comments:
   provider               : false # false (default), "disqus", "discourse", "facebook", "google-plus", custom"
   disqus:
-    shortname            : "jianjieluoblog" # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
+    shortname            : "zyong812blog" # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
   discourse:
     server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
   facebook:
@@ -64,11 +64,11 @@ google_ad_slot           :
 
 # Site Author
 author:
-  name             : "Jianjie Luo (罗剑杰)"
-  avatar           : "bio-photo-2.jpg"
-  bio              : "SYSU & JDAIR Joint-PhD candidate"
-  location         : "Guangzhou & Beijing, China"
-  email            : "luojj26@mail2.sysu.edu.cn"
+  name             : "Yong Zhang"
+  avatar           :
+  bio              : "CUHK-SZ & JD Joint-PhD candidate"
+  location         : "Shenzhen & Beijing, China"
+  email            : "yongzhang@link.cuhk.edu.cn"
   uri              :
   bitbucket        :
   codepen          :
@@ -76,7 +76,7 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : "jianjieluo"
+  github           : "zyong812"
   google_plus      :
   keybase          :
   instagram        :
@@ -84,7 +84,7 @@ author:
   linkedin         :
   pinterest        :
   soundcloud       :
-  stackoverflow    : # http://stackoverflow.com/users/123456/username
+  stackoverflow    : 
   steam            :
   tumblr           :
   twitter          : 
@@ -92,7 +92,7 @@ author:
   weibo            :
   xing             :
   youtube          :
-  scholar          : PMgCjQcAAAAJ
+  scholar          : raEl9wUAAAAJ
 
 
 # Reading Files
