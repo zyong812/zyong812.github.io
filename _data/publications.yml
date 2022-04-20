@@ -2,10 +2,10 @@
 all:
   - title: "Exploring Structure-aware Transformer over Interaction Proposals for Human-Object Interaction Detection"
     authors: "**Yong Zhang**, Yingwei Pan, Ting Yao, Rui Huang, Tao Mei, and Chang-Wen Chen"
-  #   venue: "In CVPR, 2022"
-  #   teaser: STIP_intro.pdf
-  #   links:
-  #     - "[PDF](){: .btn .btn--info}"
+    venue: "In CVPR, 2022"
+    teaser: STIP_intro.pdf
+    links:
+      - "[PDF](){: .btn .btn--info}"
 
   # - title: "Boosting Scene Graph Generation with Visual Relation Saliency." ACM Transactions on Multimedia Computing"
   #   authors: "**Yong Zhang**, Yingwei Pan, Ting Yao, Rui Huang, Tao Mei, and Chang-Wen Chen"
