@@ -1,19 +1,6 @@
 # News on home page
 main:
-  # - "(January 2022) One paper accepted to [ACM Transactions on Multimedia Computing, Communications, and Applications(TOMM)](https://dl.acm.org/journal/tomm)."
-  # - "(October 2021) [X-modaler](https://github.com/YehLi/xmodaler) won [The Best Open Source Award of ACM Multimedia 2021](https://2021.acmmm.org/)!"
-  # - "(August 2021) I will attend [ACM MULTIMEDIA 2021](https://2021.acmmm.org/) conference onsite in Chengdu, China. Nice to see you!"
-  # - "(August 2021) We have released [X-modaler](https://github.com/YehLi/xmodaler), a versatile and high-performance codebase for cross-modal analytics. Please feel free to use/star it!"
-  # - "(July 2021) One paper accepted to [ACM MULTIMEDIA 2021](https://2021.acmmm.org/main-track-list)."
-  # - "(Match 2021) [PRE-TRAINING FOR VIDEO CAPTIONING CHALLENGE@ACM MULTIMEDIA 2021](http://www.auto-video-captions.top/2021/) launched for Video-Language Pretraining!"
+  # - "(January 2022) One paper accepted to xxx."
 
 all:
-  # - "(January 2022) One paper accepted to [ACM Transactions on Multimedia Computing, Communications, and Applications(TOMM)](https://dl.acm.org/journal/tomm)."
-  # - "(October 2021) [X-modaler](https://github.com/YehLi/xmodaler) won [The Best Open Source Award of ACM Multimedia 2021](https://2021.acmmm.org/)!"
-  # - "(August 2021) I will attend [ACM MULTIMEDIA 2021](https://2021.acmmm.org/) conference onsite in Chengdu, China. Nice to see you!"
-  # - "(August 2021) We have released [X-modaler](https://github.com/YehLi/xmodaler), a versatile and high-performance codebase for cross-modal analytics. Please feel free to use/star it!"
-  # - "(July 2021) One paper accepted to [ACM MULTIMEDIA 2021](https://2021.acmmm.org/main-track-list)."
-  # - "(Match 2021) [PRE-TRAINING FOR VIDEO CAPTIONING CHALLENGE@ACM MULTIMEDIA 2021](http://www.auto-video-captions.top/2021/) launched for Video-Language Pretraining!"
-  # - "(Match 2021) [ACTION2.0 Dataset](http://www.auto-video-captions.top/2021/dataset) has been released."
-  # - "(Match 2020) [PRE-TRAINING FOR VIDEO CAPTIONING CHALLENGE@ACM MULTIMEDIA 2020](http://www.auto-video-captions.top/2020/) launched for Video-Language Pretraining!"
-  # - "(Match 2020) We have released a large-scale video-language pre-training dataset [Auto-captions on GIF(ACTION)](http://www.auto-video-captions.top/2020/dataset) to facilitate Video-Language Pretraining!"
+  # - "(January 2022) One paper accepted to xxx."
