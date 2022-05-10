@@ -16,7 +16,7 @@ all:
       - "[PDF](https://dl.acm.org/doi/pdf/10.1145/3514041){: .btn .btn--info}"
   
   - title: "Performance analysis of touch-interaction behavior for active smartphone authentication"
-    authors: "Shen, Chao, **Yong Zhang**, Xiaohong Guan, and Roy A. Maxion"
+    authors: "Chao Shen, **Yong Zhang**, Xiaohong Guan, and Roy A. Maxion"
     venue: "In IEEE Transactions on Information Forensics and Security, 2015"
     teaser: TIFS2015.jpg
     links:
