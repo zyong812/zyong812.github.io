@@ -5,7 +5,7 @@ all:
     venue: "In CVPR, 2022"
     teaser: STIP_intro.png
     links:
-      # - "[PDF](){: .btn .btn--info}"
+      - "[PDF](https://openaccess.thecvf.com/content/CVPR2022/papers/Zhang_Exploring_Structure-Aware_Transformer_Over_Interaction_Proposals_for_Human-Object_Interaction_Detection_CVPR_2022_paper.pdf){: .btn .btn--info}"
       - "[Code](https://github.com/zyong812/STIP){: .btn .btn--info}"
 
   - title: "Boosting Scene Graph Generation with Visual Relation Saliency"
