@@ -17,14 +17,14 @@ all:
 
   - title: "Boosting Scene Graph Generation with Visual Relation Saliency"
     authors: "**Yong Zhang**, Yingwei Pan, Ting Yao, Rui Huang, Tao Mei, and Chang-Wen Chen"
-    venue: "In ACM Transactions on Multimedia Computing, Communications, and Applications, 2022"
+    venue: "In ACM Transactions on Multimedia Computing, Communications, and Applications (TOMM), 2022"
     teaser: SMP_intro.png
     links:
       - "[PDF](https://dl.acm.org/doi/pdf/10.1145/3514041){: .btn .btn--info}"
   
   - title: "Performance analysis of touch-interaction behavior for active smartphone authentication"
     authors: "Chao Shen, **Yong Zhang**, Xiaohong Guan, and Roy A. Maxion"
-    venue: "In IEEE Transactions on Information Forensics and Security, 2015"
+    venue: "In IEEE Transactions on Information Forensics and Security (TIFS), 2015"
     teaser: TIFS2015.jpg
     links:
       - "[PDF](http://ieeexplore.ieee.org/document/7335628){: .btn .btn--info}"
