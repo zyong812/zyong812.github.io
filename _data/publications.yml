@@ -5,7 +5,7 @@ all:
     venue: "In CVPR, 2023"
     teaser: VS3_intro.png
     links:
-      - "[PDF](https://openreview.net/forum?id=ga5hb48_0p5&referrer=%5BAuthor%20Console%5D(%2Fgroup%3Fid%3Dthecvf.com%2FCVPR%2F2023%2FConference%2FAuthors%23your-submissions){: .btn .btn--info}"
+      - "[PDF](todo){: .btn .btn--info}"
 
   - title: "Exploring Structure-aware Transformer over Interaction Proposals for Human-Object Interaction Detection"
     authors: "**Yong Zhang**, Yingwei Pan, Ting Yao, Rui Huang, Tao Mei, and Chang-Wen Chen"
