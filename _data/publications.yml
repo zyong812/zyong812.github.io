@@ -31,7 +31,7 @@ all:
 
   - title: "Touch-interaction behavior for continuous user authentication on smartphones"
     authors: "Chao Shen, **Yong Zhang**, Zhongmin Cai, Tianwen Yu, and Xiaohong Guan."
-    venue: "In International Conference on Biometrics (ICB), and Applications, 2015"
+    venue: "In International Conference on Biometrics (ICB), 2015"
     teaser: ICB2015.jpg
     links:
       - "[PDF](https://ieeexplore.ieee.org/abstract/document/7139046){: .btn .btn--info}"
