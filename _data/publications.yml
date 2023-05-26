@@ -1,11 +1,18 @@
 # Publications on home page
 all:
+  - title: "End-to-End Video Scene Graph Generation with Temporal Propagation Transformer"
+    authors: "**Yong Zhang**, Yingwei Pan, Ting Yao, Rui Huang, Tao Mei, and Chang-Wen Chen"
+    venue: "In IEEE Transactions on Multimedia (TMM), 2023"
+    teaser: TPT_intro.png
+    links:
+      - "[PDF](todo){: .btn .btn--info}"
+
   - title: "Learning to Generate Language-supervised and Open-vocabulary Scene Graph using Pre-trained Visual-Semantic Space"
     authors: "**Yong Zhang**, Yingwei Pan, Ting Yao, Rui Huang, Tao Mei, and Chang-Wen Chen"
     venue: "In CVPR, 2023"
     teaser: VS3_intro.png
     links:
-      - "[PDF](todo){: .btn .btn--info}"
+      - "[PDF](https://openaccess.thecvf.com/content/CVPR2023/papers/Zhang_Learning_To_Generate_Language-Supervised_and_Open-Vocabulary_Scene_Graph_Using_Pre-Trained_CVPR_2023_paper.pdf){: .btn .btn--info}"
 
   - title: "Exploring Structure-aware Transformer over Interaction Proposals for Human-Object Interaction Detection"
     authors: "**Yong Zhang**, Yingwei Pan, Ting Yao, Rui Huang, Tao Mei, and Chang-Wen Chen"
