@@ -5,7 +5,7 @@ all:
     venue: "In IEEE Transactions on Multimedia (TMM), 2023"
     teaser: TPT_intro.png
     links:
-      - "[PDF](todo){: .btn .btn--info}"
+      - "[PDF](https://ieeexplore.ieee.org/abstract/document/10145598){: .btn .btn--info}"
 
   - title: "Learning to Generate Language-supervised and Open-vocabulary Scene Graph using Pre-trained Visual-Semantic Space"
     authors: "**Yong Zhang**, Yingwei Pan, Ting Yao, Rui Huang, Tao Mei, and Chang-Wen Chen"
