@@ -13,6 +13,7 @@ all:
     teaser: VS3_intro.png
     links:
       - "[PDF](https://openaccess.thecvf.com/content/CVPR2023/papers/Zhang_Learning_To_Generate_Language-Supervised_and_Open-Vocabulary_Scene_Graph_Using_Pre-Trained_CVPR_2023_paper.pdf){: .btn .btn--info}"
+      - "[Code](https://github.com/zyong812/VS3_CVPR23){: .btn .btn--info}"
 
   - title: "Exploring Structure-aware Transformer over Interaction Proposals for Human-Object Interaction Detection"
     authors: "**Yong Zhang**, Yingwei Pan, Ting Yao, Rui Huang, Tao Mei, and Chang-Wen Chen"
