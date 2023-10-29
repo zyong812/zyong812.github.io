@@ -20,7 +20,7 @@ words_per_minute         : 200
 comments:
   provider               : false # false (default), "disqus", "discourse", "facebook", "google-plus", custom"
   disqus:
-    shortname            : "zyong812page" # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
+    shortname            : "zyong-page" # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
   discourse:
     server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
   facebook:
@@ -66,7 +66,7 @@ google_ad_slot           :
 author:
   name             : "Yong Zhang"
   avatar           : 'me.jpg'
-  bio              : "PhD candidate of CUHK-Shenzhen"
+  bio              : "CS PhD"
   location         : "Shenzhen, China"
   email            : "yongzhang@link.cuhk.edu.cn"
   uri              :
