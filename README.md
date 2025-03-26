@@ -1,4 +1,4 @@
-# Yong Zhang website
+# My website
 
 ## Commands
 
@@ -12,6 +12,8 @@
 ### Rebuild css from _scss
 - $ npm run build:css
 
-## Based on Minimal Mistakes theme
-=======
-# [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/)
+## References:
+
+- [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/)
+- https://jianjieluo.github.io/
+- https://github.com/lygjwy/lygjwy.github.io
