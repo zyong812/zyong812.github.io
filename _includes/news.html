@@ -1,0 +1,69 @@
+<style>
+  .news-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .news-list li {
+    position: relative;
+    padding: 0.45em 0 0.45em 1em;
+    font-size: 0.92em;
+    line-height: 1.55;
+    border-left: 2px solid #e2e8f0;
+  }
+  .news-list li::before {
+    content: '';
+    position: absolute;
+    left: -5px;
+    top: 0.75em;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #3b82f6;
+  }
+  .news-date {
+    display: inline-block;
+    font-weight: 600;
+    color: #3b82f6;
+    min-width: 5.5em;
+    font-size: 0.88em;
+    font-variant-numeric: tabular-nums;
+  }
+  .news-toggle {
+    margin-top: 0.5em;
+    font-size: 0.85em;
+    color: #64748b;
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 0;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+  .news-toggle:hover { color: #334155; }
+  .news-extra { display: none; }
+  .news-extra.show { display: block; }
+</style>
+
+<h2 style="clear: both;">News</h2>
+
+<ul class="news-list">
+  {% for item in site.data.news.main %}
+  <li>
+    <span class="news-date">[{{ item.date }}]</span> {{ item.text }}
+  </li>
+  {% endfor %}
+</ul>
+
+{% if site.data.news.all.size > 0 %}
+<div class="news-extra" id="newsExtra">
+  <ul class="news-list">
+    {% for item in site.data.news.all %}
+    <li>
+      <span class="news-date">[{{ item.date }}]</span> {{ item.text }}
+    </li>
+    {% endfor %}
+  </ul>
+</div>
+<button class="news-toggle" onclick="var el=document.getElementById('newsExtra');var s=el.classList.toggle('show');this.textContent=s?'Show less':'Show more';">Show more</button>
+{% endif %}

@@ -1,6 +1,11 @@
 # News on home page
+# "main" items are shown by default; click "Show more" to reveal "all" items.
 main:
-  # - "(January 2022) One paper accepted to xxx."
+  - date: "2026.03"
+    text: "I joined the School of Artificial Intelligence at Shenzhen University as an Assistant Professor."
+  - date: "2025.11"
+    text: "One paper <i>Appearance-Motion Decomposed Alignment for Text-Video Retrieval</i> was accepted to <b>AAAI 2026</b>."
 
 all:
-  # - "(January 2022) One paper accepted to xxx."
+  - date: "2023.07"
+    text: "I obtained my Ph.D. degree from CUHK-SZ."
