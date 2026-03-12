@@ -25,7 +25,7 @@ all:
 
   - title: "Boosting Scene Graph Generation with Visual Relation Saliency"
     authors: "**Yong Zhang**, Yingwei Pan, Ting Yao, Rui Huang, Tao Mei, and Chang-Wen Chen"
-    venue: "In ACM Transactions on Multimedia Computing, Communications, and Applications (TOMM), 2022"
+    venue: "In ACM Transactions on Multimedia Computing, Communications, and Applications (TOMM), 2023"
     teaser: SMP_intro.png
     links:
       - "[PDF](https://dl.acm.org/doi/pdf/10.1145/3514041){: .btn .btn--info}"

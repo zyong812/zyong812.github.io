@@ -1,129 +1,231 @@
 {% include base_path %}
 
 <style>
-  #timeline .timelineitem {
+  .timeline {
     position: relative;
-    padding: 0.6em 0 0.6em 1.2em;
-    margin-bottom: 0.5em;
-    border-left: 4px solid #94a3b8;
-    padding-left: 1em;
-    transition: border-left-color 0.2s ease, background 0.2s ease;
+    padding: 0;
   }
-  #timeline .timelineitem:hover {
-    background: rgba(0,0,0,0.02);
-    border-radius: 4px;
+  .timeline::before {
+    content: '';
+    position: absolute;
+    left: 7px;
+    top: 14px;
+    bottom: 14px;
+    width: 2px;
+    background: #e2e8f0;
   }
-  #timeline .timelineitem .tdate {
-    font-size: 0.9em;
-    font-weight: 600;
-    margin-bottom: 0.2em;
+
+  .tl-item {
+    position: relative;
+    padding: 0 0 1.4em 36px;
   }
-  #timeline .timelineitem .ttitle {
-    margin: 0 0 0.25em 0;
-    font-size: 1.05em;
-    line-height: 1.35;
+  .tl-item:last-child { padding-bottom: 0; }
+  .tl-item::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 6px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 3px solid;
+    background: #fff;
+    z-index: 1;
+    box-sizing: border-box;
   }
-  #timeline .timelineitem .tdesc {
-    font-size: 0.9em;
-    color: #64748b;
-    line-height: 1.4;
+  .tl-item.type-work::before { border-color: #3b82f6; }
+  .tl-item.type-intern::before { border-color: #10b981; }
+  .tl-item.type-edu::before { border-color: #8b5cf6; }
+  .tl-item.is-current::before {
+    background: #3b82f6;
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.12);
   }
-  #timeline .timelineitem .tdesc a {
-    color: inherit;
-    text-decoration: underline;
+
+  .tl-head {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    flex-wrap: wrap;
+    margin-bottom: 0.15em;
   }
-  /* 工作 - 蓝色 */
-  #timeline .timelineitem.timeline-work {
-    border-left-color: #0ea5e9;
-  }
-  #timeline .timelineitem.timeline-work .tdate {
-    color: #0284c7;
-  }
-  #timeline .timelineitem.timeline-work .timeline-tag {
-    background: #e0f2fe;
-    color: #0369a1;
-  }
-  /* 实习 - 绿色 */
-  #timeline .timelineitem.timeline-internship {
-    border-left-color: #10b981;
-  }
-  #timeline .timelineitem.timeline-internship .tdate {
-    color: #059669;
-  }
-  #timeline .timelineitem.timeline-internship .timeline-tag {
-    background: #d1fae5;
-    color: #047857;
-  }
-  /* 教育 - 紫色 */
-  #timeline .timelineitem.timeline-education {
-    border-left-color: #8b5cf6;
-  }
-  #timeline .timelineitem.timeline-education .tdate {
-    color: #7c3aed;
-  }
-  #timeline .timelineitem.timeline-education .timeline-tag {
-    background: #ede9fe;
-    color: #6d28d9;
-  }
-  .timeline-tag {
+  .tl-tag {
     display: inline-block;
-    font-size: 0.7em;
-    padding: 0.15em 0.5em;
-    border-radius: 4px;
-    margin-bottom: 0.35em;
+    font-size: 0.68em;
+    padding: 0.12em 0.5em;
+    border-radius: 3px;
     font-weight: 600;
     letter-spacing: 0.02em;
   }
+  .type-work > .tl-head .tl-tag { background: #dbeafe; color: #1d4ed8; }
+  .type-intern > .tl-head .tl-tag { background: #d1fae5; color: #047857; }
+  .type-edu > .tl-head .tl-tag { background: #ede9fe; color: #6d28d9; }
+
+  .tl-date {
+    font-size: 0.82em;
+    color: #64748b;
+    font-weight: 500;
+    font-variant-numeric: tabular-nums;
+  }
+  .tl-role {
+    font-weight: 600;
+    font-size: 0.95em;
+    color: #1e293b;
+    margin: 0;
+    line-height: 1.4;
+  }
+  .tl-inst {
+    font-size: 0.85em;
+    color: #475569;
+    margin-top: 0.05em;
+    line-height: 1.35;
+  }
+  .tl-desc {
+    font-size: 0.82em;
+    color: #94a3b8;
+    margin-top: 0.15em;
+    line-height: 1.4;
+  }
+  .tl-desc a {
+    color: #64748b;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    text-decoration-color: #cbd5e1;
+    transition: color 0.15s;
+  }
+  .tl-desc a:hover { color: #334155; }
+
+  /* Concurrent sub-items during education */
+  .tl-sub {
+    margin-top: 0.5em;
+    margin-left: 0.5em;
+  }
+  .tl-sub-label {
+    font-size: 0.72em;
+    color: #94a3b8;
+    margin-bottom: 0.3em;
+    margin-left: 0.2em;
+    font-weight: 500;
+  }
+  .tl-sub-item {
+    position: relative;
+    padding: 0.3em 0 0.7em 1.5em;
+    border-left: 1.5px solid #e2e8f0;
+  }
+  .tl-sub-item:last-child { border-left-color: transparent; }
+  .tl-sub-item::before {
+    content: '';
+    position: absolute;
+    left: -5px;
+    top: 12px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 2px solid;
+    background: #fff;
+    z-index: 1;
+    box-sizing: border-box;
+  }
+  .tl-sub-item.type-intern::before { border-color: #10b981; }
+  .tl-sub-item.type-work::before { border-color: #3b82f6; }
+  .tl-sub-item .tl-tag {
+    display: inline-block;
+    font-size: 0.62em;
+    padding: 0.12em 0.5em;
+    border-radius: 3px;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+  }
+  .tl-sub-item.type-intern .tl-tag { background: #d1fae5; color: #047857; }
+  .tl-sub-item.type-work .tl-tag { background: #dbeafe; color: #1d4ed8; }
+  .tl-sub-item .tl-head { margin-bottom: 0.1em; }
+  .tl-sub-item .tl-role { font-size: 0.9em; }
+  .tl-sub-item .tl-inst { font-size: 0.82em; }
+  .tl-sub-item .tl-desc { font-size: 0.78em; }
+  .tl-sub-item .tl-date { font-size: 0.78em; }
 </style>
 
-<h2 style="clear: both;">Education and Experiences</h2>
-<div id="timeline">
-  <div class="timelineitem timeline-work">
-    <span class="timeline-tag">工作</span>
-    <div class="tdate">2026.2 -</div>
-    <h3 class="ttitle">Assistant Professor, School of Artificial Intelligence, Shenzhen University, Shenzhen</h3>
-    <div class="tdesc"></div>
+<h2 style="clear: both;">Education & Experiences</h2>
+<div class="timeline">
+
+  <div class="tl-item type-work is-current">
+    <div class="tl-head">
+      <span class="tl-tag">Work</span>
+      <span class="tl-date">2026.3 – Present</span>
+    </div>
+    <div class="tl-role">Assistant Professor</div>
+    <div class="tl-inst">School of Artificial Intelligence, Shenzhen University</div>
   </div>
-  <div class="timelineitem timeline-work">
-    <span class="timeline-tag">工作</span>
-    <div class="tdate">2023.7 - 2026.3</div>
-    <h3 class="ttitle">Researcher and postdoctoral fellow, Sangfor Technologies & Chinese Academy of Sciences, Shenzhen</h3>
-    <div class="tdesc"></div>
+
+  <div class="tl-item type-work">
+    <div class="tl-head">
+      <span class="tl-tag">Work</span>
+      <span class="tl-date">2023.7 – 2026.3</span>
+    </div>
+    <div class="tl-role">Researcher & Postdoctoral Fellow</div>
+    <div class="tl-inst">Sangfor Technologies & Chinese Academy of Sciences, Shenzhen</div>
   </div>
-  <div class="timelineitem timeline-internship">
-    <span class="timeline-tag">实习</span>
-    <div class="tdate">2022.12 - 2023.2</div>
-    <h3 class="ttitle">Research intern, International Digital Economy Academy (IDEA), Shenzhen</h3>
-    <div class="tdesc">Mentor: <a href="https://www.cs.cmu.edu/~yuqingt/" target="_blank">Dr. Yuqing Tang</a>.</div>
+
+  <div class="tl-item type-edu">
+    <div class="tl-head">
+      <span class="tl-tag">Education</span>
+      <span class="tl-date">2018.8 – 2023.7</span>
+    </div>
+    <div class="tl-role">Ph.D. in Computer and Information Engineering</div>
+    <div class="tl-inst">The Chinese University of Hong Kong, Shenzhen (CUHK-SZ)</div>
+    <div class="tl-desc">Joint Ph.D. program with JD.com</div>
+    <div class="tl-sub">
+      <div class="tl-sub-label">▾ Overlapping experience</div>
+      <div class="tl-sub-item type-intern">
+        <div class="tl-head">
+          <span class="tl-tag">Intern</span>
+          <span class="tl-date">2022.12 – 2023.2</span>
+        </div>
+        <div class="tl-role">Research Intern</div>
+        <div class="tl-inst">International Digital Economy Academy (IDEA), Shenzhen</div>
+        <div class="tl-desc">Mentor: <a href="https://www.cs.cmu.edu/~yuqingt/" target="_blank">Dr. Yuqing Tang</a></div>
+      </div>
+      <div class="tl-sub-item type-intern">
+        <div class="tl-head">
+          <span class="tl-tag">Intern</span>
+          <span class="tl-date">2020.8 – 2022.7</span>
+        </div>
+        <div class="tl-role">Research Intern (Star Intern Award)</div>
+        <div class="tl-inst">Computer Vision and Multimedia Lab, JD Explore Academy, Beijing</div>
+        <div class="tl-desc">Mentor: <a href="http://home.ustc.edu.cn/~panywei/" target="_blank">Dr. Yingwei Pan</a> and <a href="http://tingyao.deepfun.club/" target="_blank">Dr. Ting Yao</a></div>
+      </div>
+    </div>
   </div>
-  <div class="timelineitem timeline-internship">
-    <span class="timeline-tag">实习</span>
-    <div class="tdate">2020.8 - 2022.7</div>
-    <h3 class="ttitle">Research intern, Computer Vision and Multimedia Lab at JD Explore Academy, Beijing</h3>
-    <div class="tdesc">Star intern award. Mentor: <a href="http://home.ustc.edu.cn/~panywei/" target="_blank">Dr. Yingwei Pan</a> and <a href="http://tingyao.deepfun.club/" target="_blank">Dr. Ting Yao</a>.</div>
+
+  <div class="tl-item type-work">
+    <div class="tl-head">
+      <span class="tl-tag">Work</span>
+      <span class="tl-date">2015.7 – 2018.7</span>
+    </div>
+    <div class="tl-role">Software Engineer</div>
+    <div class="tl-inst">Shenzhen Da-Jiang Innovations Sciences and Technologies Ltd. (DJI), Shenzhen</div>
   </div>
-  <div class="timelineitem timeline-work">
-    <span class="timeline-tag">工作</span>
-    <div class="tdate">2015.7 - 2018.7</div>
-    <h3 class="ttitle">Software engineer, DJI, Shenzhen</h3>
-    <div class="tdesc"></div>
+
+  <div class="tl-item type-edu">
+    <div class="tl-head">
+      <span class="tl-tag">Education</span>
+      <span class="tl-date">2011.8 – 2015.6</span>
+    </div>
+    <div class="tl-role">B.Eng. in Automation</div>
+    <div class="tl-inst">Xi'an Jiaotong University (XJTU)</div>
+    <div class="tl-desc">GPA top 5%</div>
+    <div class="tl-sub">
+      <div class="tl-sub-label">▾ Overlapping experience</div>
+      <div class="tl-sub-item type-intern">
+        <div class="tl-head">
+          <span class="tl-tag">Intern</span>
+          <span class="tl-date">2013.8 – 2015.5</span>
+        </div>
+        <div class="tl-role">Research Assistant</div>
+        <div class="tl-inst">Systems Engineering Institute, Xi'an Jiaotong University (XJTU)</div>
+        <div class="tl-desc">Mentor: <a href="https://gr.xjtu.edu.cn/en/web/cshen" target="_blank">Prof. Chao Shen</a></div>
+      </div>
+    </div>
   </div>
-  <div class="timelineitem timeline-work">
-    <span class="timeline-tag">实习</span>
-    <div class="tdate">2013.8 - 2015.5</div>
-    <h3 class="ttitle">Research assistant, Systems Engineering Institute of XJTU, Xi'an</h3>
-    <div class="tdesc">Mentor: <a href="https://gr.xjtu.edu.cn/en/web/cshen" target="_blank">Prof. Chao Shen</a>.</div>
-  </div>
-  <div class="timelineitem timeline-education">
-    <span class="timeline-tag">教育</span>
-    <div class="tdate">2018.8 - 2023.7</div>
-    <h3 class="ttitle">Ph.D in Computer and Information Engineering, The Chinese University of Hong Kong, Shenzhen (CUHK-SZ)</h3>
-    <div class="tdesc">Joint Ph.D program with JD.com.</div>
-  </div>
-  <div class="timelineitem timeline-education">
-    <span class="timeline-tag">教育</span>
-    <div class="tdate">2011.8 - 2015.6</div>
-    <h3 class="ttitle">B.Eng. in Automation, Xi'an Jiaotong University (XJTU)</h3>
-    <div class="tdesc">GPA top 5%.</div>
-  </div>
+
 </div>
