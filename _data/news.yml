@@ -1,8 +1,10 @@
 # News on home page
 # "main" items are shown by default; click "Show more" to reveal "all" items.
 main:
-  - date: "Always"
+  - date: "Always~"
     text: "I am looking for self-motivated Undergraduate and Graduate students. Feel free to contact me for research guidance or collaboration."
+  - date: "2026.03"
+    text: "One paper <i>Boosting Knowledge-based Visual Question Answering with Structured Context Reasoning</i> was accepted to <b>ICME 2026</b>."
   - date: "2026.03"
     text: "I joined the School of Artificial Intelligence at Shenzhen University as an Assistant Professor."
   - date: "2025.11"
